@@ -1,0 +1,1 @@
+# hangman-sampl2
