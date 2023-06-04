@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    #game {
+      margin: 20px auto;
+      max-width: 400px;
+    }
+    #word {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hangman Game</h1>
+  <div id="game">
+    <div id="word"></div>
+    <div id="guessedLetters"></div>
+    <div id="remainingGuesses"></div>
+    <input type="text" id="guess" placeholder="Enter a letter" autocomplete="off">
+    <button onclick="guessLetter()">Guess</button>
+  </div>
+
+  <script src="hangman.js"></script>
+</body>
+</html>
